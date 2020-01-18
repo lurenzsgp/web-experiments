@@ -9,9 +9,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: EditorConfig-Action
-      uses: zbeekman/EditorConfig-Action@v1.1.1
-
     - name: ESLint Action
       uses: hallee/eslint-action@1.0.1
       
