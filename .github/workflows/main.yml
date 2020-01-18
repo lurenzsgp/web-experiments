@@ -11,4 +11,5 @@ jobs:
     - uses: actions/checkout@v1      
     - name: Spellcheck Action
       uses: rojopolis/spellcheck-github-actions@0.2.0
-    
+    - name: stylelinter
+      uses: actions-hub/stylelint@v1.1.2
