@@ -12,3 +12,6 @@ jobs:
 
     - name: stylelinter
       uses: actions-hub/stylelint@v1.1.2
+      env:
+        INDENT_SPACES: 4
+        PATTERN: "style/*.css"
