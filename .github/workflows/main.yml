@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: EditorConfig-Action
+      uses: zbeekman/EditorConfig-Action@v1.1.1
+
+    - name: ESLint Action
+      uses: hallee/eslint-action@1.0.1
+      
+    - name: Spellcheck Action
+      uses: rojopolis/spellcheck-github-actions@0.2.0
+    
